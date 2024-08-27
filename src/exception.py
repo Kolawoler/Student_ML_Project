@@ -1,6 +1,6 @@
 import sys
 import traceback
-import logging
+from src.logger import logging
 
 def error_mssg_details(error):
     """Function to extract and format detailed error message with traceback"""
@@ -20,14 +20,5 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
     
-
-if __name__ == "__main__":
-
-    try :
-        a = 10/0
-    except Exception as e:
-        
-        logging.info("Division error")
-        raise CustomException(e , sys)
 
 
