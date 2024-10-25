@@ -89,10 +89,13 @@ class Data_transformer :
 
             logging.info("saved preprocessing object")
 
+            save_obj(file_path= self.data_transfomer_config.preprocessor_obj_file_path,
+                     obj = obj_transformer)
+
             
 
             return (train_transformed_data_arr, test_transformed_data_arr,
-                    self.data_transfomer_config.preprocessor_obj_file_path 
+                    self.self.data_transfomer_config.preprocessor_obj_file_path 
 
             )
 
