@@ -11,7 +11,7 @@ from src.exception import CustomException
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from src.utils import save_obj
-from src.components.data_ingestion import Data_ingestion
+# from src.components.data_ingestion import Data_ingestion
 
 # from src.components.data_transformation import Data_transformer
 # from src.components.data_transformation import DataTransformerconfig
@@ -95,7 +95,7 @@ class Data_transformer :
             
 
             return (train_transformed_data_arr, test_transformed_data_arr,
-                    self.self.data_transfomer_config.preprocessor_obj_file_path 
+                    self.data_transfomer_config.preprocessor_obj_file_path 
 
             )
 
@@ -105,12 +105,12 @@ class Data_transformer :
             raise CustomException(e, sys)
 
 
-if __name__ == "__main__":
-    obj = Data_ingestion()
-    train_data, test_data = obj.initiate_data_ingestion()
+# if __name__ == "__main__":
+#     obj = Data_ingestion()
+#     train_data, test_data = obj.initiate_data_ingestion()
 
-    data_transformation = Data_transformer()
-    data_transformation.initiate_data_trasformation(train_path=train_data, test_path= test_data)
+#     data_transformation = Data_transformer()
+#     data_transformation.initiate_data_trasformation(train_path=train_data, test_path= test_data)
 
 
 
