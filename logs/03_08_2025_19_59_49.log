@@ -1,0 +1,13 @@
+2025-03-08 19:59:53,263 - 31 - root - INFO - Entered the data ingestion method or compponent
+2025-03-08 19:59:53,312 - 37 - root - INFO - reading the dataset as dataframe
+2025-03-08 19:59:53,320 - 50 - root - INFO - data splitting initiated
+2025-03-08 19:59:53,329 - 54 - root - INFO - data save to the respective folder
+2025-03-08 19:59:53,329 - 61 - root - INFO - Read train and test data
+2025-03-08 19:59:53,329 - 62 - root - INFO - getting the transformer objects
+2025-03-08 19:59:53,370 - 77 - root - INFO - Applying processing object on testing and training data
+2025-03-08 19:59:53,370 - 44 - root - INFO - categorical columns : ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
+2025-03-08 19:59:53,370 - 45 - root - INFO - Numerical columns : ['reading score', 'writing score']
+2025-03-08 19:59:53,403 - 84 - root - INFO - adding the data and target feature
+2025-03-08 19:59:53,403 - 90 - root - INFO - saved preprocessing object
+2025-03-08 19:59:53,403 - 35 - root - INFO - splittingg has started 
+2025-03-08 19:59:53,706 - 64 - root - INFO - best model found on both training and test
