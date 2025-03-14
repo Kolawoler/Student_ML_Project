@@ -32,7 +32,8 @@ class Data_ingestion:
 
 
         try :
-            df = pd.read_csv("Student_ML_Project/Notebook/StudentsPerformance.csv") 
+            df = pd.read_csv("C:/Users/Rotim/OneDrive/Documents/Data_Science_Projects/Student_ML_Project/Notebook/StudentsPerformance.csv") 
+            
             print(df)
             logging.info("reading the dataset as dataframe")
 
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     print("transformation completeted")
 
     Model_training = model_training()
-    print(Model_training.get_model_training(train_array= train_array_, test_array= test_array_))
+    print(Model_training.initiate_model_trainer(train_array= train_array_, test_array= test_array_))
 
 
 
