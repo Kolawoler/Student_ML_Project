@@ -11,8 +11,8 @@ from sklearn.linear_model import Lasso
 from src.exception import CustomException
 import os, sys
 # from catboost import CatBoostRegressor
-from src.utils import save_obj
-from src.utils import evaluation_model
+from src.utils.utils import save_obj
+from src.utils.utils import evaluation_model
 
 @dataclass
 

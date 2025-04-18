@@ -1,16 +1,13 @@
 import os
-import sys
+from data_transformation import Data_transformer
 from src.exception import CustomException
 from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-from src.components.model_training import model_training
-# from src.components.model_training import Modeltransformmer_config
-
-# from src.components.data_transformation import DataTransformerconfig
-from src.components.data_transformation import Data_transformer
-
+from model_training import model_training
+from model_training import Modeltransformmer_config
+import sys
 
 @dataclass
 class Data_ingestion_config :
