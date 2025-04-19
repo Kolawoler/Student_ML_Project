@@ -18,7 +18,7 @@ from src.utils.utils import evaluation_model
 
 
 class Modeltransformmer_config:
-     trained_model_file_path = os.path.join("artificats", "model.pkl")
+     trained_model_file_path = os.path.join("artifacts", "model.pkl")
 
 class model_training:
      

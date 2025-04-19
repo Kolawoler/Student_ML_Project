@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
     Transformer = Data_transformer()
     train_array_, test_array_,_ = Transformer.initiate_data_trasformation(train_data, test_data)
-    print("transformation completeted")
+    print(f"transformation completeted  and also the shape of the test_data is {train_array_.shape} and columns are {train_array_[0]}" )
 
     Model_training = model_training()
     print(Model_training.initiate_model_trainer(train_array= train_array_, test_array= test_array_))
