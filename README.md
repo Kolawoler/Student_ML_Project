@@ -25,7 +25,7 @@ End-to-end ML pipeline to predict students’ math scores, deployed as a Flask A
    python3 -m venv venv
    source venv/bin/activate
    
-3. ## pip install -r requirements.txt
+3. ## pip install -r requirements.txt **
       pip install -r requirements.txt
 
 **Usage**
